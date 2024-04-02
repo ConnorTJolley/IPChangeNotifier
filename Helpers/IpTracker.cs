@@ -116,18 +116,16 @@
                 {
                     return client.DownloadString("http://wtfismyip.com/text");
                 }
-                catch (WebException _)
+                catch (WebException)
                 {
-                    // offline...
                 }
 
                 try
                 {
                     return client.DownloadString("https://api.ipify.org/");
                 }
-                catch (WebException _)
+                catch (WebException)
                 {
-                    // offline too...
                 }
 
                 new ToastContentBuilder()
